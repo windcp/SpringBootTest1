@@ -15,7 +15,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/showUser")
+    @RequestMapping("/addUser")
     @ResponseBody
     public void toIndex(User user, Model model){
         userService.insert(user);
