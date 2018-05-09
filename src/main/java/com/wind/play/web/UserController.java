@@ -17,8 +17,14 @@ public class UserController {
 
     @RequestMapping("/addUser")
     @ResponseBody
-    public void toIndex(User user, Model model){
+    public void addUser(User user, Model model){
         userService.insert(user);
+    }
+
+    @RequestMapping("/selectUser")
+    @ResponseBody
+    public void selectUser(int id, Model model){
+        userService.selectByPrimaryKey(id);
     }
 
 }

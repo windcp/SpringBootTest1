@@ -6,4 +6,6 @@ public interface UserDao {
 
     int insert(User record);
 
+    User selectByPrimaryKey(int id);
+
 }

@@ -15,4 +15,9 @@ public class UserService implements UserDao {
     public int insert(User record) {
         return userDao.insert(record);
     }
+
+    @Override
+    public User selectByPrimaryKey(int id) {
+        return userDao.selectByPrimaryKey(id);
+    }
 }
